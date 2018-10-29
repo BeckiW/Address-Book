@@ -1,0 +1,29 @@
+{
+  "name": "assignment-address-book",
+  "version": "1.0.0",
+  "description": "Today's assignment is to build an small API – the server side of a phone book. The API could later be used to build webpages like Eniro or Hitta.se.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeckiW/assignment-address-book.git"
+  },
+  "author": "Becki Wordsworth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeckiW/assignment-address-book/issues"
+  },
+  "homepage": "https://github.com/BeckiW/assignment-address-book#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint-config-technigo": "^1.6.2",
+    "nodemon": "^1.18.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
