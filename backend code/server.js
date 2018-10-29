@@ -22,17 +22,19 @@ app.get("/contacts/:id", (req, res) => {
   const id = parseInt(req.params.id)
   console.log(id);
   const individual = contactsJson.contacts.filter(item => item.id == id)
+
   if (individual.length){
     res.send(individual)
   } else {
     res.status(404)
-    res.send("Page not found")}
-  })
+    res.send("Page not found")
+  }
+})
 
+app.get("*", (req, res) => {
+ res.send("Page not found")
+})
 
-  app.get("*", (req, res) => {
-   res.send("Page not found")
-  })
 
 // catch all other pages
 //app.get(“*”, (req, res) => {
