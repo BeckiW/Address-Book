@@ -1,0 +1,38 @@
+.table {
+  color: #333333 ;
+  font-weight: 400 ;
+  text-align: left ;
+  font-size: 18px ;
+  border-style: solid;
+
+}
+
+.contact-list {
+  list-style-type: none;
+  margin: 20px 0px 10px 0px;
+  padding: 0px;
+}
+
+.contact-list-item {
+  border: solid 1px #ffffff;
+  background-color: #eee;
+  padding: 4px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.contact-list-id {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.contact-list-name {
+  color: #555;
+  font-style: italic;
+}
+
+.contact-list-email {
+  color: #555;
+  font-style: italic;
+}
