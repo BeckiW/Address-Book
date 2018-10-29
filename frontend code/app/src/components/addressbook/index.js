@@ -7,8 +7,6 @@ class Addressbook extends React.Component {
 }
 
 
-
-
   render() {
     return (
       <table className="table">

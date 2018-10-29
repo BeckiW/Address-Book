@@ -29,7 +29,7 @@ class App extends Component {
   onFilterTextChange = (evt) => {
     this.filterText = evt.target.value;
     this.forceUpdate();
-}
+  }
 
   render() {
 
@@ -39,10 +39,11 @@ class App extends Component {
           contactsToShow = this.state.contacts.filter((contact) => {
             if ( contact.name.toUpperCase().includes(this.filterText.toUpperCase()) ) {
               return true
-            }else {
+            } else {
               return false}
           }
-        );
+        )
+
         } else {
           contactsToShow = this.state.contacts;
         }
@@ -52,7 +53,6 @@ class App extends Component {
         ))
 
     if (this.state.contacts.length > 0) {
-
 
     return (
 
@@ -69,9 +69,9 @@ class App extends Component {
           )
         } else {
 
-          return (
-            <div>
-            </div>
+        return (
+          <div>
+          </div>
           )
         }
       }
